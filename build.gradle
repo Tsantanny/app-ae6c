@@ -20,6 +20,7 @@ jacoco {
 
 
 repositories {
+mavenCentral()
 
     mavenCentral()
 }
@@ -109,7 +110,6 @@ jacocoTestReport {
 }
 
 dependencies {
-    implementation 'io.awspring.cloud:spring-cloud-aws-starter-parameter-store:3.1.1'
     implementation 'org.springframework.boot:spring-boot-starter-web:3.2.2'
     testImplementation 'org.testcontainers:testcontainers:2.0.2'
 
@@ -147,6 +147,7 @@ dependencies {
     testImplementation 'org.testcontainers:testcontainers-junit-jupiter:2.0.2'
     testImplementation 'org.junit-pioneer:junit-pioneer:2.2.0'
 
+implementation 'io.awspring.cloud:spring-cloud-aws-starter-parameter-store:3.1.1'
 
 
 }
